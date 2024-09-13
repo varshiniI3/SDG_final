@@ -5,7 +5,7 @@ import './Contact.css';
 import berg from '../../images/berg.jpg';
 import pris from '../../images/pris.jpg';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import Header from './PagesHeader.js';
+
 import '@fortawesome/fontawesome-free/css/all.css';
 
 function Contact() {

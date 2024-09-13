@@ -2,7 +2,7 @@ import React from 'react'; // Import React
 import ServiceCard from './ServiceCard'; // Import ServiceCard component
 import Sidebar from './Sidebar'; // Import Sidebar component
 import './ServicesGrid.css'; // Import CSS file for ServicesGrid component
-import Header from '../contact/PagesHeader'; // Import Header component
+ // Import Header component
 import Footer from './Footer'; // Import Footer component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon component
 import { faCode, faCloud, faBullhorn, faMobileAlt, faChartLine, faShieldAlt, faCreditCard, faServer, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import specific icons from FontAwesome
