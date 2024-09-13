@@ -1,0 +1,139 @@
+
+
+.header {
+  background-image: url('../../images/header-background.jpg');
+  background-size: cover;
+  height: 250px; /* Adjust based on your header height */
+  display: flex;
+  align-items: center; /* Center vertically */
+  position: relative;
+}
+
+
+.header-content {
+  width: 80%; /* Match .content width */
+  margin: 0 auto; /* Center horizontally */
+  position: absolute; /* Allows precise positioning */
+  top: 50%; /* Vertically center the content */
+  left: 13%; /* Adjust this value to match .content margin */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.header-logo img {
+  height: 60px; /* Adjust based on your logo size */
+}
+
+.header-nav {
+  font-size: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align navigation items to the left */
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.header-bullet {
+  display: inline-block;
+  width: 5px; /* Bullet size */
+  height: 5px; /* Bullet size */
+  background-color: rgba(255, 255, 255, 0.7); /* Less bright white color */
+  border-radius: 50%; /* Circle shape */
+  margin: 0 8px; /* Space around the bullet */
+}
+
+.header-info {
+  font-size: 1em; /* Smaller font size */
+  color: rgba(255, 255, 255, 0.7); /* Less bright white color */
+  margin-bottom: 5px; /* Space between this text and the heading */
+  text-align: left; /* Left-align the breadcrumb text */
+
+}
+
+.header-underline {
+  width: 30px; /* Length of the line */
+  height: 3px; /* Thickness of the line */
+  background-color: white;
+  position: absolute;
+  left: 0; /* Align to left */
+  top: calc(100% + 10px); /* 10px gap between the text and line */
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header {
+    height: 200px; /* Adjust for large screens */
+  }
+
+  .header-nav {
+    font-size: 28px; /* Slightly smaller font size */
+  }
+
+  .header-link {
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 180px; /* Adjust for tablets */
+  }
+
+  .header-content {
+    width: 90%; /* Adjust width for smaller screens */
+ 
+  }
+
+  .header-nav {
+    font-size: 24px; /* Smaller font size */
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+
+  .header-link {
+    font-size: 0.8em; /* Smaller font size */
+  }
+
+  .header-logo img {
+    height: 30px; /* Smaller logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 150px; /* Adjust for mobile */
+  }
+
+  .header-content {
+    width: 90%; /* Adjust width for smaller screens */
+
+  }
+
+  .header-nav {
+    font-size: 20px; /* Smaller font size */
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+
+  .header-link {
+    font-size: 0.7em; /* Smaller font size */
+  }
+
+  .header-info {
+    font-size: 0.7em; /* Smaller font size */
+    color: rgba(255, 255, 255, 0.7); /* Less bright white color */
+    margin-bottom: 5px; /* Space between this text and the heading */
+    text-align: left; /* Left-align the breadcrumb text */
+    width: 100%; /* Ensure it takes full width on mobile */
+  }
+
+  .header-logo img {
+    height: 25px; /* Smaller logo */
+  }
+}

@@ -1,0 +1,55 @@
+
+  /* Stats.css */
+
+/* Default styles for desktop view */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #192F59; /* Dark blue background color */
+ 
+  margin-bottom: 20px;
+  
+
+}
+
+.stat-item {
+  text-align: center;
+  color: #fff; /* White text color */
+  font-size: large;
+}
+
+.stat-item i {
+  font-size: 2em;
+  color: #78b48d; /* Blue color for icons */
+  margin-bottom: 10px;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 1024px) {
+  .stats {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .stat-item {
+    margin-bottom: 20px;
+    width: 80%;
+    
+  }
+
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+}

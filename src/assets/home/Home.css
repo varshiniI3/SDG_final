@@ -1,0 +1,1017 @@
+/* Home Component Specific Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  color: white;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.content-text {
+  max-width: 50%; /* Adjusted for desktop layout */
+}
+
+.explore-button {
+  background-color: #3DB166;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.explore-button:hover {
+  background-color: #192F59;
+  color: #3DB166;
+}
+
+
+/* Image Grid Section */
+/* Image Grid Section */
+/* Container adjustment to 80% width */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Image Grid Section */
+.image-grid-section {
+  height: 600px; /* Set the total height of the section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2; /* Page background color */
+  padding: 5% 5% 0 5%; /* Top padding is 5%, no bottom padding, and horizontal padding is 5% */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.image-grid-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Stretch items to fill the container height */
+  width: 100%; /* Use full width */
+  height: 100%; /* Use full height */
+}
+
+.image-grid-item {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start of the container */
+  margin-bottom: 20px; /* Add margin for spacing between items on small screens */
+}
+
+.image-grid-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.image-placeholder {
+  width: 100%;
+  flex-grow: 1; /* Allow image container to grow and fill available space */
+  background-color: #f0f0f0; /* Placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  height: 500px; /* Adjust height to fill the section minus the caption height */
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without stretching */
+}
+
+.image-grid-caption {
+  background-color: #192F59; /* Secondary color */
+  color: white;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px; /* Fixed height for the caption */
+  border-radius: 0 0 6px 6px; /* Rounded bottom corners */
+}
+
+.image-grid-caption .icon {
+  margin-right: 10px;
+  color: #3DB166; /* Primary color for icon */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .image-grid-section {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 2% 2%; /* Reduce padding for small screens */
+  }
+  
+  .image-grid-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align items */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .image-grid-item {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for spacing */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .image-placeholder {
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .image-grid-caption {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+.home {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #24272C;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Hero Bar Section */
+.home-hero-bar {
+  width: 100%;
+  background-color: #192F59; /* Primary color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.home-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.home-hero-text {
+  font-size: 24px; /* h2 size */
+  color: white; /* Text color */
+  margin: 0;
+  text-align: center; /* Center text */
+  max-width: 600px; /* Limit text width on larger screens */
+}
+
+.home-hero-button {
+  font-size: 16px; /* Body text size */
+  padding: 10px 20px; /* Button padding */
+  color: white; /* White text */
+  background-color: #3DB166; /* Primary color */
+  border: 2px solid #192F59; /* Primary color */
+  border-radius: 6px; /* Rounded corners */
+  text-decoration: none;
+  margin-left: 20px; /* Add some margin for spacing */
+  display: inline-block; /* Ensure it's an inline-block element */
+}
+
+.home-hero-button:hover {
+  background-color: #192F59; /* Secondary color */
+  color: #3DB166; /* Primary color text */
+  border: 2px solid #3DB166;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-hero-text {
+    font-size: 20px; /* Slightly smaller text */
+    max-width: 100%; /* Full width */
+    margin-bottom: 20px; /* Add some space below the text */
+  }
+
+  .home-hero-button {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add some space above the button */
+    width: 100%; /* Full width on small screens */
+    text-align: center; /* Center text */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero-text {
+    font-size: 18px; /* Even smaller text for small screens */
+  }
+
+  .home-hero-button {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 16px; /* Smaller button padding */
+  }
+}
+
+/* Container adjustment to 80% width */
+
+
+/* Services Section */
+/* Services Section */
+/* Services Section */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services-section {
+  text-align: center;
+  width: 100%;
+  padding: 0 5% 5% 5%; /* Top padding is 0, bottom padding is 5% */
+  background-color: #F2F2F2; /* Page background color */
+  height: 600px;
+}
+
+
+
+.services-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.services-title {
+  background-color: #3DB166; /* Primary color */
+  color: white;
+  border-radius: 6px;
+  padding: 10px 40px;
+  font-size: 32px; /* h1 size */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  margin-bottom: 20px; /* Space between heading and rest */
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows the cards to wrap if the screen is too small */
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjusted padding */
+  margin: 10px;
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* Set a fixed height to ensure consistency */
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.service-icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 20px; /* h3 size */
+  margin-bottom: 10px;
+  color: #192F59; /* Secondary color */
+}
+
+.service-card p {
+  font-size: 16px; /* Body text size */
+  color: #666;
+}
+
+.more-button-card {
+  background-color: #3DB166; /* Primary color */
+  border-radius: 6px;
+  padding: 10px 20px; /* Adjusted padding */
+  margin: 10px; /* Adjust margin for spacing */
+  flex: 1; /* Ensure it takes full width */
+  max-width: 300px; /* Limit width to maintain card layout */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* Set a fixed height to ensure consistency */
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  color: white; /* Text color */
+  font-size: 32px; /* Text size */
+}
+
+.more-button-card:hover {
+  background-color: #192F59; /* Secondary color on hover */
+  color: #3DB166;
+}
+
+/* Services Media Queries */
+@media (max-width: 1200px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card, .more-button-card {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 24px; /* Adjusted size for medium screens */
+    padding: 5px 20px;
+  }
+
+  .service-card, .more-button-card {
+    max-width: 90%;
+  }
+  
+  .services-section {
+    height: 100%;
+    padding: 0 5% 5% 5%; /* Ensure equal left and right padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 20px; /* Adjusted size for small screens */
+    padding: 5px 15px;
+  }
+  
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .services-section {
+    height: 100%;
+    padding: 0 5% 5% 5%; /* Ensure equal left and right padding */
+  }
+
+  .service-card, .more-button-card {
+    max-width: 100%;
+    margin: 20px 10px; /* Adjust margin for better spacing on mobile */
+    height: 450px; /* Ensure height is consistent */
+  }
+
+  .more-button-card {
+    padding: 15px; /* Adjust padding for mobile */
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+}
+
+
+
+/* SDG Sol section */
+.sdg-solutions-section {
+  padding: 2% 0; /* Reduced top padding to remove top space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #192F59; /* Page BG Color */
+  margin-top: 20px; /* Adjusted margin top */
+  height: 600px;
+}
+
+.sdg-solutions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+  width: 200%; /* Adjusted width to remove left and right space */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sdg-solutions-left {
+  flex: 1;
+  margin-right: 70px; /* Reduced margin-right */
+  padding: 20px ;
+  border-radius: 8px;
+  background-color: #3DB166; /* Primary color */
+  color: white ; /* Text color */
+  height: 170px;
+}
+
+.sdg-solutions-left h3 {
+  font-size: 18px; /* h4 size */
+  margin: 0;
+}
+
+.sdg-solutions-left h2 {
+  font-size: 24px; /* h2 size */
+  margin-top: 10px;
+}
+
+.sdg-solutions-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF; /* Background color for the right side */
+  border-radius: 8px;
+}
+
+.sdg-solutions-right .image-placeholder {
+  width: 110%;
+  height: 450px; /* Adjust height as necessary */
+  background-color: #f0f0f0; /* Placeholder color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #999;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sdg-solutions-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .sdg-solutions-left,
+  .sdg-solutions-right {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0; /* Adjusted margin */
+    padding: 20px;
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .sdg-solutions-left h2 {
+    font-size: 20px; /* Adjust font size for very small screens */
+  }
+
+  .sdg-solutions-left h3 {
+    font-size: 16px; /* Adjust font size for very small screens */
+  }
+
+  .sdg-solutions-right .image-placeholder {
+    height: 200px; /* Adjust height for very small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sdg-solutions-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .sdg-solutions-left,
+  .sdg-solutions-right {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0; /* Adjusted margin */
+    padding: 20px;
+    text-align: center; /* Center align text on smaller screens */
+  }
+  .sdg-solutions-left h2 {
+    font-size: 20px; /* Adjust font size for very small screens */
+  }
+
+  .sdg-solutions-left h3 {
+    font-size: 16px; /* Adjust font size for very small screens */
+  }
+
+  .sdg-solutions-right .image-placeholder {
+    height: 200px; /* Adjust height for very small screens */
+  }
+}
+/* new sections */
+
+
+/* New sections */
+/* Header section */
+/* Fonts */
+/* You do not need @import for Google Fonts here */
+
+/* Header section */
+.header-bar {
+  width: 100%;
+  background-color:#fff; /* Primary color */
+  display: flex;
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px; /* Adjust the height as needed */
+}
+
+
+.header-image {
+  width: 100px; /* Adjust image width */
+  height: auto;
+}
+
+.header-text {
+  flex: 1; /* Take remaining space */
+  text-align: center;
+  color: black; /* Text color */
+}
+
+.header-text h1 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Font style */
+  font-size: 20px; /* Primary headings */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.header-text p {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Font style */
+  font-size: 14px; /* Body text */
+}
+
+.help-button {
+  background-color: #3DB166; /* Button background color */
+  color: white; /* Button text color */
+  border: 2px solid #3DB166; /* Border color */
+  padding: 8px 16px; /* Button Padding */
+  font-family: 'Poppins', sans-serif; /* Font style */
+  font-size: 14px; /* Button text size */
+  border-radius: 12px; /* More rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: auto; /* Adjusted to auto width */
+}
+
+.help-button:hover {
+  background-color: #192F59; /* Secondary color on hover */
+  color: #3DB166; /* Primary color text on hover */
+  border-color: #192F59; /* Border color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: center; /* Center items in the column */
+    height: auto; /* Allow height to adjust */
+    padding: 20px 10px; /* Increase padding for better spacing */
+  }
+
+  .header-text {
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .help-button {
+    margin-top: 6px; /* Add space above the button */
+    align-self: center; /* Center the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-image {
+    width: 60px; /* Smaller image width */
+  }
+
+  .header-text h1 {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .header-text p {
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .help-button {
+    font-size: 12px; /* Smaller button text */
+    padding: 6px 12px; /* Smaller button padding */
+    border-radius: 6px; /* Adjust border radius for small screens */
+  }
+}
+
+
+/* Main content section */
+/* Main content section */
+/* Main Content Section */
+.background-image {
+  background-image: url('../../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed; /* Fixed so it covers the viewport even during scroll */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  z-index: -1; /* Ensures it stays behind the content */
+}
+
+
+
+.main-content {
+  color: white;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  min-height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  box-sizing: border-box; /* Ensures padding doesn't add extra width */
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+}
+
+
+.content-text {
+  max-width: 50%; /* Adjusted for desktop layout */
+}
+
+.content-text h2 {
+  color: #3DB166; /* Followed color */
+}
+
+.content-text h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color:#F2F2F2
+}
+
+.content-text p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.explore-button {
+  background-color: #3DB166; /* Followed color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 20px; /* Added margin for spacing */
+  width: auto; /* Adjust button width */
+}
+
+.explore-button:hover {
+  background-color: #192F59; /* Secondary color on hover */
+  color: #3DB166; /* Primary color text on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .content-text {
+    max-width: 100%; /* Full width for smaller screens */
+    text-align: left; /* Align text to the left for smaller screens */
+  }
+
+  .content-text h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .content-text p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .explore-button {
+    padding: 8px 16px; /* Adjust button padding for smaller screens */
+    font-size: 14px; /* Adjust button text size for smaller screens */
+    width: 100%; /* Full width for button on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 15px 10px; /* Further reduce padding for extra small screens */
+    height: auto; /* Adjust height to fit content */
+    justify-content: flex-start; /* Align content to the top */
+  }
+
+  .content-text {
+    max-width: 50%; /* Adjust text width to take half the page */
+    text-align: left; /* Align text to the left */
+  }
+
+  .content-text h1 {
+    font-size: 24px; /* Further adjust font size for extra small screens */
+  }
+
+  .content-text p {
+    font-size: 12px; /* Further adjust font size for extra small screens */
+  }
+
+  .explore-button {
+    padding: 6px 12px; /* Further adjust button padding for extra small screens */
+    font-size: 12px; /* Further adjust button text size for extra small screens */
+    width: auto; /* Adjust button width */
+  }
+}
+
+
+
+/* Digital Marketing section */
+.digital-marketing-section {
+  background-color:whitesmoke;
+  color: #000;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.digital-marketing-image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.digital-marketing-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures there is no space below the image */
+}
+
+.digital-marketing-text {
+  max-width: 100%;
+  color: #192F59;
+}
+
+.digital-marketing-text h2 {
+  color: #3DB166;
+}
+
+.digital-marketing-text h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.digital-marketing-text p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.digital-marketing-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.digital-marketing-text ul li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.digital-marketing-text ul li::before {
+  content: '➔';
+  position: absolute;
+  left: 0;
+  color: #3DB166;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .digital-marketing-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .digital-marketing-image {
+    width: 40%;
+    max-width: 40%;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .digital-marketing-text {
+    max-width: 50%;
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+  .digital-marketing-section {
+    padding: 20px;
+  }
+
+  .digital-marketing-image {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10%;
+    
+  }
+
+  .digital-marketing-text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #F2F2F2; /* Page BG Color */
+  color: #24272C; /* Text Color */
+  font-family: 'Poppins', sans-serif; /* Font Style */
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  height: 600px; /* Fixed height */
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.form-image {
+  flex: 1;
+}
+
+.form-image img {
+  width: 100%;
+  height: 100%; /* Full height of the form image section */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form-content {
+  flex: 1;
+  padding: 40px;
+  color: #24272C; /* Text Color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+.form-content h1 {
+  font-size: 24px; /* Primary Headings */
+  margin-bottom: 20px;
+}
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.input-row input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Border for inputs */
+  font-size: 16px; /* Body text */
+  background-color: #F9F9F9; /* Slightly different BG color for inputs */
+  color: #24272C; /* Text Color */
+  flex: 1;
+}
+
+.input-row input:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+
+input[type="email"] {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Border for input */
+  font-size: 16px; /* Body text */
+  background-color: #F9F9F9; /* Slightly different BG color for input */
+  color: #24272C; /* Text Color */
+  margin-bottom: 20px;
+}
+
+input[type="email"]:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.form-content button {
+  padding: 15px 20px; /* Button Padding */
+  background-color: #3DB166; /* Primary Color */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Border radius */
+  cursor: pointer;
+  font-size: 18px; /* Body text */
+  width: 100%; /* Full width for button */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.form-content button:hover {
+  background-color: #192F59;
+  color: #fff; /* White text on hover */
+}
+
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust for mobile view */
+    padding: 20px; /* Padding for mobile view */
+  }
+
+  .form-container {
+    flex-direction: column; /* Stack form elements on smaller screens */
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+    margin: 0; /* Remove margin */
+  }
+
+  .form-image img {
+    width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+    border-radius: 8px 8px 0 0; /* Adjust border radius for top corners only */
+    margin-bottom: 20px; /* Margin bottom for spacing */
+  }
+
+  .form-content {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .form-content h1 {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+  }
+
+  .input-row {
+    flex-direction: column; /* Ensure inputs stack vertically */
+  }
+
+  .input-row input {
+    width: 100%; /* Full width for inputs on smaller screens */
+  }
+
+  button {
+    width: 100%; /* Full width for button on smaller screens */
+  }
+}

@@ -1,0 +1,356 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F2F2;
+  color: #24272C;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Container */
+.navbar-container {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar Styles */
+.top-bar {
+  background-color: #3DB166; /* Primary Color */
+  padding: 5px 0;
+}
+
+.top-bar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.top-bar-info {
+  color: black;
+  background-color: #B8E2C8; /* Lighter blue color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px; /* Margin for separation */
+  text-decoration: none;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.top-links-container {
+  display: flex;
+  align-items: center;
+  background-color: #B8E2C8; /* Lighter blue color */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.top-link {
+  color: black;
+  margin: 0 5px; /* Margin for separation */
+  text-decoration: none;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
+.notification-bar {
+  color: #ffffff;
+  background-color: #3DB166; /* Primary Color */
+  padding: 5px 10px;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 15px; /* Adjust margin as needed */
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  color: #3DB166;
+}
+
+.nav-link:hover {
+  color: #192F59;
+  text-decoration: underline;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-brand-text {
+  font-weight: bold;
+  color: #000000;
+  margin-right: 10px; /* Add some spacing between the text and the toggler */
+}
+
+.navbar-toggler {
+  border: none;
+  align-items: right;
+  
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.collapse.navbar-collapse {
+  justify-content: flex-end;
+}
+
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.dropdown-item {
+  color: #3DB166;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+  color: #192F59;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #060606;
+  width: 100%;
+  margin: 0;
+}
+
+/* Quick Call and Get Started Styles */
+.quick-call-container {
+  display: flex;
+  align-items: center;
+  background-color: #E0F4EC; /* Light green background color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners for the container */
+}
+
+.quick-call {
+  display: flex; /* Ensure they are inline and aligned */
+  align-items: center; /* Center items vertically */
+  margin-right: 20px; /* Space between quick call and get started button */
+}
+
+.quick-call .call-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #3DB166; /* Primary color */
+}
+
+.quick-call .call-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-call .call-details span:first-child {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.quick-call .call-details span:last-child {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.btn-get-started {
+  background-color: #3DB166; /* Primary color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-get-started:hover {
+  background-color: #192F59; /* Darker shade for hover */
+  color: #3DB166; /* Primary color */
+}
+
+/* Container Styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  
+  .top-bar .container-fluid {
+    flex-direction: column;
+  }
+  
+  .quick-call-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .quick-call {
+    margin-right:5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 20px;
+  }
+  
+  .top-link, .top-bar-info, .notification-bar {
+    font-size: 12px;
+  }
+  
+  .btn-get-started {
+    padding: 8px 16px;
+  }
+  
+  .quick-call .call-icon {
+    font-size: 1.2rem;
+  }
+  
+  .quick-call .call-details span:first-child {
+    font-size: 0.8rem;
+  }
+  
+  .quick-call .call-details span:last-child {
+    font-size: 0.9rem;
+  }
+  
+  .collapse.navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color:#3DB166;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    float: none;
+  }
+
+  /* Hide services in mobile view by default */
+  .navbar-nav .nav-item:not(.dropdown) {
+    display: none;
+  }
+
+  /* Show services when navbar is expanded */
+  .navbar-collapse.show .navbar-nav .nav-item:not(.dropdown) {
+    display: block;
+  }
+  
+  /* Logo and three-button in one row */
+  .navbar-brand, .navbar-toggler {
+    display: inline-block;
+  }
+
+  .navbar-brand {
+    width: 70%;
+  }
+
+  .navbar-toggler {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand-text {
+    font-size: 18px;
+  }
+  .navbar-brand img {
+    width: 40px; /* Adjusted size for mobile */
+    height: 40px; /* Adjusted size for mobile */
+  }
+  
+  .btn-get-started {
+    padding: 4px 16px;
+  }
+  
+  .top-bar .container-fluid {
+    align-items: flex-start;
+  }
+  .quick-call-container {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space items evenly */
+  }
+  
+
+  .quick-call .call-details span:first-child {
+    font-size: 0.7rem;
+  }
+  
+  .quick-call .call-details span:last-child {
+    font-size: 0.8rem;
+  }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 20px;
+  }
+  
+  .navbar-brand, .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand-text {
+    font-size: 18px;
+  }
+  
+  .navbar-brand img {
+    width: 40px; /* Adjusted size for mobile */
+    height: 40px; /* Adjusted size for mobile */
+  }
+}

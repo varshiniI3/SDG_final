@@ -1,0 +1,91 @@
+/* Footer container styles */
+.footer {
+  width: 100%; /* Full width */
+  position: relative; /* Positioned relative for child elements */
+  background: url('../../images/footer-banner.jpeg') no-repeat center center; /* Background image centered */
+  background-size: cover; /* Background image covers the entire footer */
+  height: 200px; /* Fixed height, can be adjusted as needed */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-sizing: border-box; /* Include padding in width and height calculations */
+}
+
+/* Dark overlay over the background image */
+.footer-overlay {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Footer content container */
+.footer-content {
+  text-align: center; /* Center text */
+  color: white; /* White text color */
+  padding: 0 20px; /* Padding for smaller screens */
+}
+
+/* Footer contact text */
+.footer-contact {
+  font-size: 18px; /* Font size for contact text */
+  margin-bottom: 10px; /* Margin below the contact text */
+}
+
+/* Footer heading styles */
+.footer-heading {
+  font-size: 24px; /* Font size for heading */
+  margin-bottom: 20px; /* Margin below the heading */
+  color: rgba(255, 255, 255, 0.674); /* Light white text color */
+}
+
+/* Span within the footer heading */
+.footer-heading span {
+  color: #3DB166; /* Primary color */
+}
+
+/* Footer button styles */
+.footer-button {
+  background-color: #3DB166; /* Primary color */
+  color: white; /* White text */
+  border: 1px solid #3DB166; /* Border color same as background */
+  border-radius: 6px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Footer button hover state */
+.footer-button:hover {
+  background-color: #192F59; /* Secondary color */
+  color: #3DB166; /* Primary color for text */
+  border-color: #3DB166; /* Primary color for border */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 100%) {
+  .footer {
+    height: auto; /* Adjust height based on content */
+    padding: 20px 0; /* Padding around the footer */
+  }
+
+  .footer-heading {
+    font-size: 20px; /* Smaller font size for heading */
+  }
+
+  .footer-button {
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 100%) {
+  .footer-heading {
+    font-size: 18px; /* Even smaller font size for heading */
+  }
+
+  .footer-button {
+    padding: 6px 12px; /* Adjust button padding */
+  }
+}

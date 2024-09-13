@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2; /* Page BG Color */
+    color: #24272C; /* Text Color */
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .App-footer {
+    background-color: #192F59; /* Secondary Color */
+    padding: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .App-footer p {
+    margin: 0;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #3DB166; /* Primary Color */
+    color: #FFFFFF; /* White Text */
+    border: 2px solid #3DB166; /* Primary Color */
+    border-radius: 6px; /* Border Radius */
+    padding: 10px 20px; /* Button Padding */
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #192F59; /* Secondary Color */
+    color: #3DB166; /* Primary Color Text */
+  }
+  
+  /* Link Styles */
+  a {
+    color: #3DB166; /* Primary Color */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #3DB166; /* Primary Color */
+  }
+  /* Existing CSS for App.css */
+  
+  /* Global styles for the app */
+  .App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main section styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    header, main, footer {
+      padding: 10px;
+    }
+  }
+  

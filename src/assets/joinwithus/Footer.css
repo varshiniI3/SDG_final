@@ -1,0 +1,43 @@
+.footer {
+    background-image: url('../../images/footer-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-button {
+    background-color: #3DB166; /* Primary color */
+    color: white; /* White text */
+    border: 1px solid #3DB166; /* Border color */
+    border-radius: 6px; /* Border radius */
+    padding: 10px 20px; /* Button Padding */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .footer-button:hover {
+    background-color: #192F59; /* Secondary color */
+    color: #3DB166; /* Primary color text */
+    border-color: #192F59; /* Secondary color */
+  }
+  
+  

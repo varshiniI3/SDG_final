@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  background-color: #F2F2F2; /* Page BG Color */
+  color: #24272C; /* Text Color */
+  font-family: 'Poppins', sans-serif; /* Font Style */
+  font-size: 16px; /* Body text */
+  line-height: 1.6; /* Line height */
+}
+
+.partnered-with-us {
+  text-align: center;
+  padding: 5%;
+  background-color: #F2F2F2;
+}
+
+.partnered-with-us h1 {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: #3DB166;
+  color: #FFFFFF;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient Background */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1); /* Box Shadow */
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition Effects */
+  width: 250px; /* Decrease width */
+}
+
+.partner:hover {
+  transform: scale(1.05); /* Scale Effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased Shadow on Hover */
+}
+
+.partner-inner {
+  padding: 10px; /* Box Padding */
+}
+
+.partner-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.partner p {
+  font-size: 16px; /* Body text */
+  color: #24272C; /* Text Color */
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3DB166; /* Primary Color */
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: #3DB166; /* Primary Color */
+}
+
+button {
+  background-color: #3DB166; /* Primary Color */
+  color: #fff; /* White Text */
+  border: 1px solid #3DB166; /* Primary Color */
+  border-radius: 6px;
+  padding: 10px 20px; /* 10px height, 20px width */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #192F59; /* Secondary Color */
+  color: #3DB166; /* Primary Color Text */
+}
+
+/* New Styles */
+.migration-section {
+  margin-top: 40px;
+  background-color: #192F59;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.migration-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.migration-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.migration-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.migration-image img {
+  max-width: 170%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.migration-section h2 {
+  font-size: 28px;
+}
+
+.migration-section p {
+  font-size: 16px;
+}
+
+.migration-options {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Added spacing between sections */
+}
+
+.option {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient Background */
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 230px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1); /* Box Shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition Effects */
+}
+
+.option:hover {
+  transform: scale(1.05); /* Scale Effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased Shadow on Hover */
+}
+
+.option h3 {
+  font-size: 20px;
+  color: #192F59;
+  margin-bottom: 10px;
+}
+
+.option p {
+  font-size: 16px;
+  color: #24272C;
+}
+
+.additional-migration-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 19px;
+  color: hsl(0, 0%, 0%);
+}

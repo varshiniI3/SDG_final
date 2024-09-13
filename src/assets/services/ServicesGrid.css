@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Import the Poppins font */
+
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Set the font style */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Line height */
+  color: #24272C; /* Text color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in total width/height */
+  width: 100%; /* Full width */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #24272C; /* Heading color */
+}
+
+/* Anchor (link) styling */
+a {
+  color: #3DB166; /* Primary color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  justify-content: center; /* Center breadcrumbs */
+  width: 70%; /* Width adjustment */
+  height: 250px; /* Set height */
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Services page styling */
+.services-page {
+  width: 100%;
+  padding: 5% 0; /* Vertical padding */
+}
+
+/* Flex container for content */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Services list */
+.services-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 5px; /* Space between items */
+  margin-left: 3%;
+  width: 80%;
+}
+
+/* Sidebar styling */
+.sidebar {
+  flex: 1;
+  margin-left: 5px;
+}
+
+/* Contact section */
+.contact {
+  background-color: #3DB166;
+  color: #F2F2F2;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Testimonial and news sections */
+.testimonial, .news {
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media (max-width: 992px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    width: 80%;
+    margin: 0 auto; /* Center align */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr; /* One column */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .breadcrumbs {
+    width: 100%; /* Full width */
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%; /* Full width */
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .breadcrumbs {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .breadcrumbs {
+    width: 100%;
+  }
+}

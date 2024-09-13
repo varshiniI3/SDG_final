@@ -1,0 +1,62 @@
+/* Service card styling */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Space between items (icon, content, and read more) */
+    background: linear-gradient(145deg, #fff, #e6e6e6); /* Background gradient */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 15px #0000001a, 0 2px 4px #0000001a; /* Depth effect */
+    text-align: center;
+    height: 400px; /* Fixed height for all cards */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Icon styling inside service card */
+.home-service-icon {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circle icon */
+    background-color: #e0f7ea; /* Light green background */
+    font-size: 40px; /* Icon size */
+    color: #3DB166; /* Primary color */
+}
+
+/* Content inside service card */
+.service-content {
+    padding: 10px;
+    flex-grow: 1; /* Pushes content upwards */
+}
+
+.service-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #192F59; /* Secondary color */
+}
+
+.service-content p {
+    font-size: 16px;
+    color: #24272C; /* Text color */
+    margin-bottom: auto; /* Ensure paragraph doesn't expand unnecessarily */
+}
+
+/* Read more link */
+.read-more {
+    color: #3db166; /* Primary color */
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: none;
+    align-self: flex-end; /* Position Read more at the bottom */
+}
